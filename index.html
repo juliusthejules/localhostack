@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Protector</title>
+    <script src="script.js"></script>
+</head>
+<body align="center">
+    <h1>Privacy Protector</h1>
+    <button id="privacyToggle">Start Protection (Green)</button>
+    <script>
+        const toggleButton = document.getElementById('privacyToggle');
+
+        toggleButton.addEventListener('click', () => {
+            if (toggleButton.textContent === 'Start Protection (Green)') {
+                toggleButton.textContent = 'Stop Protection (Red)';
+                toggleButton.style.backgroundColor = 'red';
+                startPrivacyEngine();
+            } else {
+                toggleButton.textContent = 'Start Protection (Green)';
+                toggleButton.style.backgroundColor = 'green';
+                stopPrivacyEngine();
+            }
+        });
+    </script>
+</body>
+</html>
