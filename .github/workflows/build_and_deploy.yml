@@ -1,0 +1,30 @@
+name: Build and Deploy Privacy Protection Engine
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build Package
+        run: pyinstaller server.py
+
+      - name: Deploy Package
+        uses: actions/upload-artifact@v2
+        with:
+          name: privacy-protection-engine
+          path: dist/privacy-protection-engine
