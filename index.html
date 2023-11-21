@@ -40,20 +40,34 @@
 <body align="center">
     <h1>Privacy Protector</h1>
     <button id="privacyToggle">Start Protection (Green)</button>
-    <script>
-        const toggleButton = document.getElementById('privacyToggle');
+<script>
+    const toggleButton = document.getElementById('privacyToggle');
+    let isPrivacyEngineRunning = false;
 
-        toggleButton.addEventListener('click', () => {
-            if (toggleButton.textContent === 'Start Protection (Green)') {
-                toggleButton.textContent = 'Stop Protection (Red)';
-                toggleButton.style.backgroundColor = 'red';
-                startPrivacyEngine();
-            } else {
-                toggleButton.textContent = 'Start Protection (Green)';
-                toggleButton.style.backgroundColor = 'green';
-                stopPrivacyEngine();
-            }
-        });
-    </script>
+    // Check if local storage has a value for isPrivacyEngineRunning
+    if (localStorage.getItem('isPrivacyEngineRunning') === 'true') {
+        isPrivacyEngineRunning = true;
+        toggleButton.textContent = 'Stop Protection (Red)';
+        toggleButton.style.backgroundColor = 'red';
+        startPrivacyEngine();
+    }
+
+    toggleButton.addEventListener('click', () => {
+        if (isPrivacyEngineRunning) {
+            toggleButton.textContent = 'Start Protection (Green)';
+            toggleButton.style.backgroundColor = 'green';
+            stopPrivacyEngine();
+            isPrivacyEngineRunning = false;
+        } else {
+            toggleButton.textContent = 'Stop Protection (Red)';
+            toggleButton.style.backgroundColor = 'red';
+            startPrivacyEngine();
+            isPrivacyEngineRunning = true;
+        }
+
+        // Store the current state of the engine in local storage
+        localStorage.setItem('isPrivacyEngineRunning', isPrivacyEngineRunning);
+    });
+</script>
 </body>
 </html>
