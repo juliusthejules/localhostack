@@ -4,7 +4,7 @@
     "display": "standalone",
     "scope": "./index.html",
     "start_url": "./",
-    "name": "Localhostack - Privacy Protection Engine",
+    "name": "Localhostack Privacy Protection Engine",
     "short_name": "Localhostack",
     "description": "A free privacy protection engine app, the successor of Binquasin.",
     "icons": [
