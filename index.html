@@ -13,6 +13,28 @@
 <link rel="exec" href="./server.py"/>
   <exec src="./server.py"></exec>
  <script src="./server.py"></script>
+
+<!--PWA Begin-->
+<link rel="icon" href="./icon-192x192.png"/>
+<link rel="icon" href="./icon-256x256.png"/>
+<link rel="icon" href="./icon-384x384.png"/>
+<link rel="icon" href="./icon-512x512.png"/>
+<link rel="manifest" href="./app.webmanifest" crossorigin="use-credentials"/>
+ <!--PWA End-->
+
+    <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .then((registration) => {
+          console.log('Service Worker registered with scope:', registration.scope);
+        })
+        .catch((error) => {
+          console.error('Service Worker registration failed:', error);
+        });
+    });
+  }
+    </script>
     
 </head>
 <body align="center">
