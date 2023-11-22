@@ -3,9 +3,9 @@ self.addEventListener('install', event => {
     caches.open('localhostack-cache')
       .then(cache => {
         return cache.addAll([
-          '/',
-          'script.js',
-          'server.py'
+          './',
+          './script.js',
+          './server.py'
         ]);
       })
   );
