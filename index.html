@@ -52,19 +52,19 @@
     // Check if local storage has a value for isPrivacyEngineRunning
     if (localStorage.getItem('isPrivacyEngineRunning') === 'true') {
         isPrivacyEngineRunning = true;
-        toggleButton.textContent = 'Stop Protection (Red)';
+        toggleButton.textContent = 'Stop Protection';
         toggleButton.style.backgroundColor = 'red';
         startPrivacyEngine();
     }
 
     toggleButton.addEventListener('click', () => {
         if (isPrivacyEngineRunning) {
-            toggleButton.textContent = 'Start Protection (Green)';
+            toggleButton.textContent = 'Start Protection';
             toggleButton.style.backgroundColor = 'green';
             stopPrivacyEngine();
             isPrivacyEngineRunning = false;
         } else {
-            toggleButton.textContent = 'Stop Protection (Red)';
+            toggleButton.textContent = 'Stop Protection';
             toggleButton.style.backgroundColor = 'red';
             startPrivacyEngine();
             isPrivacyEngineRunning = true;
