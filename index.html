@@ -38,7 +38,7 @@
     <!--OG End-->
 
     <!--JSON-LD Begin-->
-    <script type='application/ld+json'> 
+    <script type="application/ld+json"> 
 {
   "@context": "http://www.schema.org",
   "@type": "WebSite",
@@ -49,11 +49,11 @@
     </script>
     <!--JSON-LD End-->
 
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js');
-  }
-</script>
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js');
+    });
+}
 
     
 </head>
