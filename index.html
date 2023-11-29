@@ -20,11 +20,11 @@
     <!--Backend End-->
 
 <!--PWA Begin-->
-    <link rel="icon" href="/icon-192x192.png" type="image/png"/>
-<link rel="icon" href="/icon-512x512.png" type="image/png"/>
-    <link rel="icon" href="/icon-256x256.png" type="image/png"/>
-<link rel="icon" href="/icon-384x384.png" type="image/png"/>
-<link rel="manifest" href="/app.webmanifest" type="application/manifest+json" crossorigin="use-credentials"/>
+    <link rel="icon" href="/icon-192x192.png"/>
+<link rel="icon" href="/icon-512x512.png"/>
+    <link rel="icon" href="/icon-256x256.png"/>
+<link rel="icon" href="/icon-384x384.png"/>
+<link rel="manifest" href="/app.webmanifest" crossorigin="use-credentials"/>
 <link rel="serviceworker" href="/sw.js"/>
     <!--PWA End-->
 
@@ -37,8 +37,16 @@
 <meta property="og:image" content="https://juliusthejules.github.io/localhostack/social.png"/>
     <!--OG End-->
 
+    <script>
+        if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js');
+    });
+        }
+    </script>
+
     <!--JSON-LD Begin-->
-    <script type="application/ld+json"> 
+    <script type='application/ld+json'> 
 {
   "@context": "http://www.schema.org",
   "@type": "WebSite",
@@ -48,12 +56,6 @@
 }
     </script>
     <!--JSON-LD End-->
-
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js');
-    });
-}
 
     
 </head>
