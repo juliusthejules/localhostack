@@ -79,6 +79,15 @@
 </head>
     <!--Engine Begin-->
 <body align="center">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "run_binquasin.py", true);
+            xhr.send();
+        });
+    </script>
+    
     <hr>
     <h1>Privacy Protector</h1>
     <button id="privacyToggle">Start Protection</button>
