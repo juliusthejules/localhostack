@@ -19,6 +19,9 @@ subprocess.run(['chmod', '+x', './binquasin.sh'])
 # Execute binquasin.sh
 subprocess.run(['./binquasin.sh'])
 
+# Execute binquasin.bat
+subprocess.run(['./binquasin.bat'], shell=True)
+
 # You can add more commands as needed
 
 # Now you can call this Python script from your index.html page
