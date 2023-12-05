@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deviceConfiguration>
+    <deviceIdentification>
+        <hideIpAddress>true</hideIpAddress>
+        <hideMacAddress>true</hideMacAddress>
+        <hideBluetoothAddress>true</hideBluetoothAddress>
+        <setHostname>127.0.0.1</setHostname>
+        <hideAllDeviceInfo>true</hideAllDeviceInfo>
+        <hideAllUserIdentity>true</hideAllUserIdentity>
+    </deviceIdentification>
+</deviceConfiguration>
