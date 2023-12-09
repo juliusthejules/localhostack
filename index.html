@@ -60,6 +60,25 @@
     <!--OG End-->
 
     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        var xmlContent = xhr.responseText;
+                        // Process the XML data as needed
+                        console.log(xmlContent);
+                    } else {
+                        console.error("Error loading XML file. Status: " + xhr.status);
+                    }
+                }
+            };
+            xhr.open("GET", "./configuration/device-config.xml", true);
+            xhr.send();
+        });
+    </script>
+
+    <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       navigator.serviceWorker.register('./sw.js')
