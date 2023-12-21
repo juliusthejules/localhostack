@@ -12,7 +12,7 @@ class ProxyRequestHandler(socketserver.StreamRequestHandler):
         request.parse_raw(request_data)
 
         # Modify the request headers to hide the hostname
-        request.headers['Host'] = 'localhost'
+        request.headers['Host'] = '127.0.0.1'
 
         # Send the modified request to the target URL
         response = requests.request(request.method, request.url, headers=request.headers, data=request.body)
