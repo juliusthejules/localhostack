@@ -6,7 +6,7 @@
     "start_url": "./",
     "name": "Localhostack - Privacy Protection Engine",
     "short_name": "Localhostack",
-    "description": "An online privacy protection engine behind a localhost proxy.",
+    "description": "An online privacy protection engine behind a localhost proxy."
     "icons": [
         {
             "src": "./icon-192x192.png",
