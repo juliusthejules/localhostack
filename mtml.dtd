@@ -1,0 +1,10 @@
+<!DOCTYPE document [
+  <!ELEMENT document (title, description, robots, author?, copyright?, viewport?, keywords?)>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT description (#PCDATA)>
+  <!ELEMENT robots (#PCDATA)>
+  <!ELEMENT author (#PCDATA)>
+  <!ELEMENT copyright (#PCDATA)>
+  <!ELEMENT viewport (#PCDATA)>
+  <!ELEMENT keywords (#PCDATA)>
+]>

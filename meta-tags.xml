@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document [
+  <!ELEMENT document (title, description, robots, author?, copyright?, viewport?, keywords?)>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT description (#PCDATA)>
+  <!ELEMENT robots (#PCDATA)>
+  <!ELEMENT author (#PCDATA)>
+  <!ELEMENT copyright (#PCDATA)>
+  <!ELEMENT viewport (#PCDATA)>
+  <!ELEMENT keywords (#PCDATA)>
+]>
+<document>
+  <title>Localhostack - Privacy Protection Engine</title>
+  <description>Protect your privacy with Localhostack, a secure localhost proxy that masks your real IP address and shields your online activity from prying eyes.</description>
+  <robots>index, follow</robots>
+  <author>Joseph D. Smith</author>
+  <copyright>Joseph D. Smith</copyright>
+  <viewport content="width=device-width, initial-scale=1.0" />
+  <keywords>Localhostack,localhost,proxy,server,privacy,protection,engine</keywords>
+</document>
