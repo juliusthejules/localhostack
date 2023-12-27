@@ -10,22 +10,22 @@
     "icons": [
         {
             "src": "/icon-192x192.png",
-            "sizes": "192x192",
+            "sizes": "192×192",
             "type": "image/png"
         },
         {
             "src": "/icon-256x256.png",
-            "sizes": "256x256",
+            "sizes": "256×256",
             "type": "image/png"
         },
         {
             "src": "/icon-384x384.png",
-            "sizes": "384x384",
+            "sizes": "384×384",
             "type": "image/png"
         },
         {
             "src": "/icon-512x512.png",
-            "sizes": "512x512",
+            "sizes": "512×512",
             "type": "image/png"
             }
     ]
