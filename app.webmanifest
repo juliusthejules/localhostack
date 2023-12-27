@@ -3,28 +3,28 @@
     "background_color": "#ffffff",
     "display": "standalone",
     "scope": "/",
-    "start_url": "/index.html",
+    "start_url": "./index.html",
     "name": "Localhostack - Privacy Protection Engine",
     "short_name": "Localhostack",
     "description": "An online privacy protection engine behind a localhost proxy.",
     "icons": [
         {
-            "src": "/icon-192x192.png",
+            "src": "./icon-192x192.png",
             "sizes": "192×192",
             "type": "image/png"
         },
         {
-            "src": "/icon-256x256.png",
+            "src": "./icon-256x256.png",
             "sizes": "256×256",
             "type": "image/png"
         },
         {
-            "src": "/icon-384x384.png",
+            "src": "./icon-384x384.png",
             "sizes": "384×384",
             "type": "image/png"
         },
         {
-            "src": "/icon-512x512.png",
+            "src": "./icon-512x512.png",
             "sizes": "512×512",
             "type": "image/png"
             }
