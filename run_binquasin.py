@@ -2,7 +2,7 @@ import subprocess
 
 # Device identification
 # Hide device IP address
-subprocess.run(['ip', 'route', 'add', 'default', 'via', '192.168.1.1'])
+subprocess.run(['ip', 'route', 'add', 'default', 'via', '127.0.0.1'])
 
 # Hide device MAC address
 subprocess.run(['macchanger', '-r', 'wlan0'])
@@ -11,7 +11,7 @@ subprocess.run(['macchanger', '-r', 'wlan0'])
 subprocess.run(['bluetoothctl', 'power', 'off'])
 
 # Hide IP address hostname
-subprocess.run(['hostnamectl', 'set-hostname', 'localhost'])
+subprocess.run(['hostnamectl', 'set-hostname', '127.0.0.1'])
 
 # Make binquasin.sh executable
 subprocess.run(['chmod', '+x', './binquasin.sh'])
