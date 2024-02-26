@@ -103,10 +103,9 @@ button {
     </script>
 
     <script>
-  if ('serviceWorker' in navigator) {
   if ("serviceWorker" in navigator) {
   navigator.serviceWorker
-    .register("/sw.js")
+    .register("./sw.js")
     .then((registration) => {
       registration.addEventListener("updatefound", () => {
         // If updatefound is fired, it means that there's
@@ -257,7 +256,6 @@ a2a_config.num_services = 22;
   publishable-key="pk_live_51OnpyEC7EANCKssz6qMeTYHucxfu7MWytgO9fDB8QT8GbGpNS1XIDuyiWf3jh5ZmT8Dao4sNUJfM3cgt0hZZcSLS00zcdQBb5v"
 >
 </stripe-buy-button>
-        </div>
         <!--Donate End-->
     <hr>
         <h3>Community</h3>
