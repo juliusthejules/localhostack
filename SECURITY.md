@@ -2,7 +2,7 @@
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability within Localhostack, please send an email to [joseph.jds.smith@gmail.com](mailto:joseph.jds.smith@gmail.com). You can also report vulnerabilities by visiting [localhostack's Gravatar profile](https://gravatar.com/localhostack) and leaving a message.
+If you discover a security vulnerability within Localhostack, please send an email to [joseph.jds.smith@gmail.com](mailto:joseph.jds.smith@gmail.com). You can also report vulnerabilities by visiting [Localhostack's Gravatar profile](https://gravatar.com/localhostack) and leaving a message.
 
 ## Responsible Disclosure
 
