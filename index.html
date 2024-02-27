@@ -65,13 +65,13 @@ button {
 
 <!--PWA Begin-->
     <meta name="application-name" content="Localhostack"/>
-<meta name="theme-color" content="#f69435"/>
-    <link rel="manifest" href="./app.webmanifest"/>
-    <link rel="icon" href="./favicon.ico"/>
-    <link rel="icon" href="./icon-192x192.png" type="image/png" sizes="192x192"/>
-    <link rel="icon" href="./icon-256x256.png" type="image/png" sizes="256x256"/>
-    <link rel="icon" href="./icon-384x384.png" type="image/png" sizes="384x384"/>
-    <link rel="icon" href="./icon-512x512"/>
+<meta name="theme-color" content="#FFB6C1"/>
+    <link rel="manifest" href="/app.webmanifest"/>
+    <link rel="icon" href="/favicon.ico"/>
+    <link rel="icon" href="/icon-192x192.png" type="image/png" sizes="192x192"/>
+    <link rel="icon" href="/icon-256x256.png" type="image/png" sizes="256x256"/>
+    <link rel="icon" href="/icon-384x384.png" type="image/png" sizes="384x384"/>
+    <link rel="icon" href="/icon-512x512"/>
  <!--PWA End-->
 
     <!--OG Begin-->
@@ -105,7 +105,7 @@ button {
     <script>
   if ("serviceWorker" in navigator) {
   navigator.serviceWorker
-    .register("./sw.js")
+    .register("/sw.js")
     .then((registration) => {
       registration.addEventListener("updatefound", () => {
         // If updatefound is fired, it means that there's
@@ -135,7 +135,7 @@ button {
   "@type": "WebSite",
   "name": "Localhostack - Privacy Protection Engine",
   "alternateName": "Localhostack",
-        "url": "https://juliusthejules.github.io/localhostack/",
+        "url": "https://juliusthejules.github.io/localhostack/index.html",
         "logo": "https://juliusthejules.github.io/localhostack/social.png"
 }
     </script>
