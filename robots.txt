@@ -1,3 +1,11 @@
 User-agent: *
 Disallow: /
 Allow: /index.html
+Allow: /favicon.ico
+Allow: /sw.js
+Allow: /app.webmanifest
+Allow: /icon-192x192.png
+Allow: /icon-256x256.png
+Allow: /icon-384x384.png
+Allow: /icon-512x512.png
+Allow: /social.png
