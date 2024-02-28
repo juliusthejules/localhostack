@@ -14,7 +14,7 @@
 const CACHE_NAME = 'offline';
 const RESOURCES_TO_CACHE = [
   '/',
-  '/index.html',
+  'index.html',
   'script.js',
   'social.png',
   'favicon.ico',
