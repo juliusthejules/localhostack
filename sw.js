@@ -16,6 +16,7 @@ const RESOURCES_TO_CACHE = [
   '/',
   './index.html',
   './script.js',
+  './manifest.json',
   './social.png',
   './favicon.ico',
   './icon-192x192.png',
