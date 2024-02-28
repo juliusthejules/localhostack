@@ -24,7 +24,7 @@ class DeviceConfiguration:
         self.hideMacAddress = hide_mac_address
         if hide_mac_address:
             self.originalValues["macAddress"] = self.get_mac_address()
-            self.set_mac_address("00-00-00-00-00-00")
+            self.set_mac_address("00:00:00:00:00:00")
         elif "macAddress" in self.originalValues:
             self.set_mac_address(self.originalValues["macAddress"])
             del self.originalValues["macAddress"]
