@@ -66,15 +66,13 @@ button {
 <!--PWA Begin-->
     <meta name="application-name" content="Localhostack"/>
 <meta name="theme-color" content="#FFB6C1"/>
-    <link rel="preload" href="./sw.js" as="script"/>
-    <link rel="manifest" href="./app.webmanifest"/>
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" sizes="32x32"/>
-    <link rel="icon" href="./icon-192x192.png" type="image/png" sizes="192x192"/>
-    <link rel="icon" href="./icon-256x256.png" type="image/png" sizes="256x256"/>
-    <link rel="icon" href="./icon-384x384.png" type="image/png" sizes="384x384"/>
-    <link rel="icon" href="./icon-512x512.png" type="image/png" sizes="512x512"/>
-
-    <script src="./sw.js"></script>
+    <link rel="preload" href="/sw.js" as="script"/>
+    <link rel="manifest" href="/app.webmanifest"/>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="32x32"/>
+    <link rel="icon" href="/icon-192x192.png" type="image/png" sizes="192x192"/>
+    <link rel="icon" href="/icon-256x256.png" type="image/png" sizes="256x256"/>
+    <link rel="icon" href="/icon-384x384.png" type="image/png" sizes="384x384"/>
+    <link rel="icon" href="/icon-512x512.png" type="image/png" sizes="512x512"/>
     <!--PWA End-->
 
     <!--OG Begin-->
@@ -106,30 +104,10 @@ button {
     </script>
 
     <script>
-  if ("serviceWorker" in navigator) {
-  navigator.serviceWorker
-    .register("./sw.js")
-    .then((registration) => {
-      registration.addEventListener("updatefound", () => {
-        // If updatefound is fired, it means that there's
-        // a new service worker being installed.
-        const installingWorker = registration.installing;
-        console.log(
-          "A new service worker is being installed:",
-          installingWorker,
-        );
-
-        // You can listen for changes to the installing service worker's
-        // state via installingWorker.onstatechange
-      });
-    })
-    .catch((error) => {
-      console.error(`Service worker registration failed: ${error}`);
-    });
-} else {
-  console.error("Service workers are not supported.");
+  if ('serviceWorker' in navigator) {
+   navigator.serviceWorker.register("/sw.js");
 }
-    </script>
+</script>
 
     <!--JSON-LD Begin-->
     <script type='application/ld+json'> 
