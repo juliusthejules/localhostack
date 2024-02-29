@@ -13,17 +13,16 @@
 
 const CACHE_NAME = 'offline';
 const RESOURCES_TO_CACHE = [
-  './',
-  './index.html',
-  './script.js',
-  './sw.js',
-  './app.webmanifest',
-  './social.png',
-  './favicon.ico',
-  './icon-192x192.png',
-  './icon-256x256.png',
-  './icon-384x384.png',
-  './icon-512x512.png',
+  '/',
+  '/index.html',
+  '/script.js',
+  '/app.webmanifest',
+  '/social.png',
+  '/favicon.ico',
+  '/icon-192x192.png',
+  '/icon-256x256.png',
+  '/icon-384x384.png',
+  '/icon-512x512.png',
 ];
 
 self.addEventListener('install', (event) => {
