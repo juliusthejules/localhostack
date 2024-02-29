@@ -6,7 +6,7 @@
     "start_url": "./index.html",
     "name": "Localhostack - Privacy Protection Engine",
     "short_name": "Localhostack",
-    "description": "A free app that hides device info such as MAC, Bluetooth and IP addresses.",
+    "description": "A free app that hides device info such as MAC, Bluetooth and IP addresses."
     "icons": [
         {
             "src": "./icon-192x192.png",
