@@ -105,11 +105,12 @@ button {
             xhr.send();
         });
     </script>
+    
 <script>
       if (navigator.serviceWorker) {
         navigator.serviceWorker.register (
-          '/localhostack/sw.js',
-          {scope: '/localhostack/'}
+          './localhostack/sw.js',
+          {scope: './localhostack/'}
         )
       }
 </script>
