@@ -264,9 +264,20 @@ a2a_config.num_services = 22;
     </div>
     <hr>
     <div align="center">
-  <button onclick="window.location.href='https://gravatar.com/localhostack';">
-      <strong>Contact</strong>
-        </button>
+  <h2>Contact Localhostack, SP.</h2>
+<form action="mailto:joseph.jds.smith@gmail.com?subject=Localhostack" method="post" enctype="text/plain">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" required><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br>
+  <label for="phone">Phone:</label><br>
+  <input type="tel" id="phone" name="phone"><br>
+  <label for="country">Country:</label><br>
+  <input type="text" id="country" name="country" required><br>
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message" rows="4" required></textarea><br><br>
+  <input type="submit" value="Submit">
+</form>
     </div>
     <hr>
     <h4>We're On Product Hunt</h4>
