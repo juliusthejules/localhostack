@@ -3,6 +3,8 @@ var APP_PREFIX = 'localhostack_';
 var VERSION = 'version_003';
 var URLS = [    
   `${GHPATH}/`,
+  `${GHPATH}/app.js`,
+  `${GHPATH}/script.js`,
   `${GHPATH}/index.html`,
   `${GHPATH}/favicon.ico`,
   `${GHPATH}/icon-192x192.png`,
