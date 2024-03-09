@@ -1,6 +1,6 @@
-var GHPATH = './localhostack/';
-var APP_PREFIX = 'localhostack_';
-var VERSION = 'version_001';
+var GHPATH = '/localhostack/';
+var APP_PREFIX = 'localhostack';
+var VERSION = 'version_005';
 var URLS = [    
   `${GHPATH}/`,
   `${GHPATH}/app.webmanifest`,
@@ -11,7 +11,8 @@ var URLS = [
   `${GHPATH}/icon-192x192.png`,
   `${GHPATH}/icon-256x256.png`,
   `${GHPATH}/icon-384x384.png`,
-  `${GHPATH}/icon-512x512.png`
+  `${GHPATH}/icon-512x512.png`,
+  `${GHPATH}/social.png`
    
 ]
 
