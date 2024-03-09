@@ -1,19 +1,12 @@
-var GHPATH = '/localhostack/';
-var APP_PREFIX = 'localhostack';
-var VERSION = 'version_005';
+var GHPATH = '/localhostack';
+var APP_PREFIX = 'lclhstck_';
+var VERSION = 'version_003';
 var URLS = [    
   `${GHPATH}/`,
-  `${GHPATH}/app.webmanifest`,
-  `${GHPATH}/app.js`,
-  `${GHPATH}/script.js`,
   `${GHPATH}/index.html`,
   `${GHPATH}/favicon.ico`,
-  `${GHPATH}/icon-192x192.png`,
-  `${GHPATH}/icon-256x256.png`,
-  `${GHPATH}/icon-384x384.png`,
   `${GHPATH}/icon-512x512.png`,
-  `${GHPATH}/social.png`
-   
+  `${GHPATH}/app.js`
 ]
 
 var CACHE_NAME = APP_PREFIX + VERSION
