@@ -26,6 +26,30 @@ button {
 
     <link rel="pingback" href="https://pingomatic.com/ping/?title=Localhostack+-+Privacy+Protection+Engine&blogurl=https%3A%2F%2Fjuliusthejules.github.io%2Flocalhostack%2F&rssurl=http%3A%2F%2F&chk_blogs=on&chk_feedburner=on&chk_tailrank=on&chk_superfeedr=on"/>
 
+  <!--PWA Begin-->
+    <meta name="application-name" content="Localhostack"/>
+<meta name="theme-color" content="#FFB6C1"/>
+    <link rel="canonical" href="https://juliusthejules.github.io/localhostack/"/>
+    <link rel="manifest" href="/localhostack/app.webmanifest"/>
+    <link rel="icon" href="/localhostack/favicon.ico" type="image/x-icon" sizes="32x32"/>
+    <link rel="icon" href="/localhostack/icon-192x192.png" type="image/png" sizes="192x192"/>
+    <link rel="icon" href="/localhostack/icon-256x256.png" type="image/png" sizes="256x256"/>
+    <link rel="icon" href="/localhostack/icon-384x384.png" type="image/png" sizes="384x384"/>
+    <link rel="icon" href="/localhostack/icon-512x512.png" type="image/png" sizes="512x512"/>
+    
+   <script>
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register (
+          '/localhostack/sw.js',
+          {scope: '/localhostack/'}
+        )
+      }
+  </script>
+
+    <script src="/app.js"></script>
+    <!--PWA End-->
+
+    
     <!--Backend Begin-->
 <link rel="dns-prefetch" href="https://localhost/index.html"/>
     
@@ -66,18 +90,6 @@ button {
  <script src="./binquasin.bat"></script>
  <!--Batch Files End-->
 
-<!--PWA Begin-->
-    <meta name="application-name" content="Localhostack"/>
-<meta name="theme-color" content="#FFB6C1"/>
-    <link rel="canonical" href="https://juliusthejules.github.io/localhostack/"/>
-    <link rel="manifest" href="/localhostack/app.webmanifest"/>
-    <link rel="icon" href="/localhostack/favicon.ico" type="image/x-icon" sizes="32x32"/>
-    <link rel="icon" href="/localhostack/icon-192x192.png" type="image/png" sizes="192x192"/>
-    <link rel="icon" href="/localhostack/icon-256x256.png" type="image/png" sizes="256x256"/>
-    <link rel="icon" href="/localhostack/icon-384x384.png" type="image/png" sizes="384x384"/>
-    <link rel="icon" href="/localhostack/icon-512x512.png" type="image/png" sizes="512x512"/>
-    <!--PWA End-->
-
     <!--OG Begin-->
     <meta property="og:title" content="Online Privacy Protection Engine Keeps You Anonymous Online"/>
 <meta property="og:site_name" content="Localhostack - Privacy Protection Engine"/>
@@ -86,16 +98,8 @@ button {
 <meta property="og:type" content="website"/>
 <meta property="og:image" content="https://juliusthejules.github.io/localhostack/social.png"/>
     <!--OG End-->
-   
-   <script>
-      if (navigator.serviceWorker) {
-        navigator.serviceWorker.register (
-          '/localhostack/sw.js',
-          {scope: '/localhostack/'}
-        )
-      }
-  </script>
 
+    
     <script> 
         document.addEventListener("DOMContentLoaded", function() {
             var xhr = new XMLHttpRequest();
