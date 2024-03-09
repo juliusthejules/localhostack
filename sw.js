@@ -1,10 +1,14 @@
 var GHPATH = '/localhostack';
-var APP_PREFIX = 'lclhstck_';
+var APP_PREFIX = 'localhostack';
 var VERSION = 'version_004';
 var URLS = [    
   `${GHPATH}/`,
   `${GHPATH}/index.html`,
   `${GHPATH}/favicon.ico`,
+  `${GHPATH}/icon-192x192.png`,
+  `${GHPATH}/icon-256x256.png`,
+  `${GHPATH}/icon-384x384.png`,
+  `${GHPATH}/icon-512x512.png`,
   `${GHPATH}/social.png`,
   `${GHPATH}/app.js`,
   `${GHPATH}/app.webmanifest`
@@ -16,7 +20,7 @@ self.addEventListener('fetch', function (e) {
   e.respondWith(
     caches.match(e.request).then(function (request) {
       if (request) { 
-        console.log('Responding with cache : ' + e.request.url);
+        console.log('Responding wi`th cache : ' + e.request.url);
         return request
       } else {       
         console.log('File is not cached, fetching : ' + e.request.url);
