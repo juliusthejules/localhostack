@@ -259,8 +259,28 @@ rssfeed_cache = "892a1659e2cf2521e93008770873d0fd";
         <button onclick="window.location.href='https://median.co/share/awqzxb';">
        <strong>Download App</strong>
         </button>
+        <hr>
+        <button id="installButton">Install App</button>
+
+    <script>
+        let installPromptEvent;
+
+        window.addEventListener('beforeinstallprompt', (event) => {
+            installPromptEvent = event;
+            event.preventDefault(); // Prevent default browser install UI
+            installButton.classList.remove('hidden'); // Make the button visible
+        });
+
+        installButton.addEventListener('click', () => {
+            if (installPromptEvent) {
+                installPromptEvent.prompt();
+            }
+        });
+    </script>
     </div>
+    
     <hr>
+    
     <h3 style="border: 2px solid black; padding: 10px;">Spread the Word</h3>
     <div style="border: 2px solid black; padding: 10px;">
     <!-- AddToAny BEGIN -->
