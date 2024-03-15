@@ -1,6 +1,6 @@
 var GHPATH = '/localhostack';
 var APP_PREFIX = 'localhostack';
-var VERSION = 'version_011';
+var VERSION = 'version_012';
 var URLS = [    
   `${GHPATH}/`,
   `${GHPATH}/index.html`,
