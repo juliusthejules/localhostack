@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Smith;Joseph;
+ORG: Localhostack, SP. 
+TITLE:Owner/Web Developer
+EMAIL;TYPE=other:joseph.jds.smith@gmail.com
+TEL;TYPE=mobile:+12704045487
+URL;TYPE=Localhostack:https://juliusthejules.github.io/localhostack/
+END:VCARD
