@@ -1,10 +1,11 @@
 BEGIN:VCARD
-VERSION:3.0
-N:Smith;Joseph;
-ORG: Localhostack, SP. 
+VERSION:2.1
+N:Smith;Joseph
+FN:Joseph Smith
+ORG:Localhostack, SP.
 TITLE:Owner/Web Developer
-EMAIL;TYPE=other:joseph.jds.smith@gmail.com
-TEL;TYPE=mobile:+12704045487
-ADR;:;;312 North Green Street,;Glasgow,;Kentucky,;United States,;42141-2810
-URL;TYPE=Localhostack:https://juliusthejules.github.io/localhostack/
+TEL:+1-270-404-5487
+EMAIL:joseph.jds.smith@gmail.com
+ADR:;;312 North Green Street,;Glasgow,;Kentucky,;42141-2810,;United States
+URL:https://juliusthejules.github.io/localhostack/
 END:VCARD
